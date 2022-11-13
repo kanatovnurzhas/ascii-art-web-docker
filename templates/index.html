@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/css/style.css">
+    <title>ASCII-Art-Web</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="http://localhost:8081/">
+            <img src="templates/img/2.png" alt="">
+        </a>
+        <ul class="navbar">
+            <li>
+                <a href="https://01.alem.school/git/Markhabat/ascii-art-web-stylize">Git</a>
+            </li>
+            <li>
+                <a href="https://01.alem.school">Alem-School</a>
+            </li>
+            <li class="authors">
+                <a href="https://01.alem.school/git/Nurzhas">Nurzhas</a> 
+                <span>&</span>
+                <a href="https://01.alem.school/git/Markhabat">Markhabat</a>
+            </li>
+        </ul> 
+    </header>
+    <div class="container">
+        <a class="title" href="http://localhost:8081/">ASCII-ART</a>
+        <form class="input-container" action="art" method="post">
+            <textarea class="text" name="text" placeholder="Type something" required></textarea>
+            <div class="banner-submit">
+                <select name="banner">
+                    <option value="standard">standard</option>
+                    <option value="shadow">shadow</option>
+                    <option value="thinkertoy">thinkertoy</option>
+                </select>
+                <input type="submit" name="submit" value="Show the Art">
+            </div>
+        </form>
+        <div class="art-container">  
+            <pre>{{ .Art}}</pre>
+        </div>
+    </div>
+    
+</body>
+</html>
