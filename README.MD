@@ -22,7 +22,7 @@ ___
 ---
 
 ## Authors
-Markhabat (@Markhabat) & Nurzhas (@Nurzhas)
+Nurzhas (@Nurzhas)
 
 ---
 
